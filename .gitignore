@@ -1,0 +1,129 @@
+# ========================
+# OS & Editor
+# ========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# Node.js / Next.js / React / React Native
+# ========================
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.next/
+out/
+build/
+dist/
+coverage/
+.vercel
+.turbo
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.expo/
+*.jsbundle
+
+# ========================
+# Flutter / Dart
+# ========================
+**/flutter/.dart_tool/
+**/flutter/.packages
+**/flutter/.pub-cache/
+**/flutter/.pub/
+**/flutter/build/
+*.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# ========================
+# Kotlin / Android
+# ========================
+*.class
+*.jar
+*.aar
+*.apk
+*.aab
+*.dex
+.gradle/
+local.properties
+**/android/.gradle/
+**/android/app/build/
+**/android/build/
+**/android/captures/
+**/android/.cxx/
+
+# ========================
+# Swift / iOS / Xcode
+# ========================
+**/ios/Pods/
+**/ios/build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+Carthage/Build/
+*.swiftpm/xcode/
+
+# ========================
+# EVM / Solidity (Hardhat, Foundry, Truffle)
+# ========================
+artifacts/
+cache/
+typechain/
+typechain-types/
+**/foundry/out/
+**/forge-cache/
+broadcast/
+
+# ========================
+# Solana (Anchor)
+# ========================
+target/
+test-ledger/
+.anchor/
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.p12
+*.key
+*.keystore
+
+# ========================
+# Misc
+# ========================
+*.log
+tmp/
+temp/
+.cache/
