@@ -6,9 +6,10 @@ export async function GET(request: NextRequest) {
   const reclaimProofRequest = await ReclaimProofRequest.init(
     process.env.RECLAIMPROTOCOL_APP_ID!,
     process.env.RECLAIMPROTOCOL_APP_SECRET!,
-    'ff4d7afe-4b78-4795-9429-d20df2deaad7'
+    'ff4d7afe-4b78-4795-9429-d20df2deaad7',
+    { acceptTeeAttestation: true }
   )
-  reclaimProofRequest.setAppCallbackUrl("https://madhavanmalolan.ngrok.dev/api/processVerification", true);
+  reclaimProofRequest.setAppCallbackUrl(process.env.BASE_URL+"/api/processVerification", true);
   // true : sets contentType to JSON
 
   const address = "unique-user-id";
