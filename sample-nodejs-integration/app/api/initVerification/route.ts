@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const reclaimProofRequest = await ReclaimProofRequest.init(
     process.env.RECLAIMPROTOCOL_APP_ID!,
     process.env.RECLAIMPROTOCOL_APP_SECRET!,
-    'example'
+    'ff4d7afe-4b78-4795-9429-d20df2deaad7'
   )
   reclaimProofRequest.setAppCallbackUrl("https://madhavanmalolan.ngrok.dev/api/processVerification", true);
   // true : sets contentType to JSON
